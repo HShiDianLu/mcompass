@@ -26,7 +26,7 @@ void dispatcher(void *handler_arg, esp_event_base_t base, int32_t id,
 }
 
 void setup() {
-  // 延时,用于一些特殊情况下能够重新烧录
+  // 延时 用于一些特殊情况下能够重新烧录
   delay(1000);
   Context &context = Context::getInstance();
   esp_event_loop_args_t loop_args = {
